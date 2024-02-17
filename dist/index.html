@@ -1,0 +1,52 @@
+<!-- 
+npx tailwindcss init 
+npx tailwindcss -i ./src/input.css -o ./dist/style.css  for working of tailwind css
+place-content-center for placing at center vertically and horizontally
+h-screen to get entire screen
+states md sm means screen size give css accrding to screen size
+overflow-hidden if image overflow it convert it to over desired size
+object-cover for full image issue
+ -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="grid place-content-center h-screen bg-yellow-50" >
+        <div class="bg-slate-900 text-white text-4xl mb-3 ">
+            ASSALAM O ALAIKUM My name is MUHAMMAD ALI
+        </div>
+        <div class="border-cyan-500 p-4 max-w-sm m-auto rounded-xl shadow-lg shadow-slate-300 flex items-center space-x-4">
+            <div>
+                <img class="rounded-full w-28 h-26 " src="https://th.bing.com/th?id=OSK.150cb1d6666d85ec967dbe5bb7213617&w=117&h=82&c=7&o=6&dpr=1.5&pid=SANGAM" alt=""/>
+
+            </div>
+            <div class="text-2xl font-bold text-black">
+                Muhammad SAW
+                <p class="text-gray-400 text-sm">The Extereme great leader</p>
+            </div>
+        </div>
+
+        <buton class="bg-slate-600 text-white rounded-lg shadow-slate-800 transition-all px-4 py-2 m-auto my-4
+        hover:bg-amber-800 hover:rounded-2xl">
+            Save
+        </buton>
+
+        <div class="max-w-sm m-auto md:max-w-xl md:bg-white bg-yellow-200  rounded-lg shadow-lg shadow-black 
+        overflow-hidden ">
+            <div class="md:flex">
+                <div> 
+                    <img class="h-22 w-full object-cover md:w-22" src="https://th.bing.com/th?id=OSK.150cb1d6666d85ec967dbe5bb7213617&w=117&h=82&c=7&o=6&dpr=1.5&pid=SANGAM"/> 
+                </div>
+
+                <div class="p-2">
+                    <p class="uppercase font-bold font-serif text-center">Meetha meetha hai meray 
+                        <span class="bg-white p-[7px]">Muhammad</span> ka naam
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>  
